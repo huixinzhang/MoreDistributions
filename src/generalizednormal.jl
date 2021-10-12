@@ -8,8 +8,8 @@ struct GeneralizedNormal{T<:Real} <: ContinuousUnivariateDistribution
     β::T
 
     function GeneralizedNormal{T}(μ, α, β) where {T}
-        @check_args(GeneralizedNormal, α > zero(T))
-        @check_args(GeneralizedNormal, β > zero(T))
+        #@check_args(GeneralizedNormal, α > zero(T))
+        #@check_args(GeneralizedNormal, β > zero(T))
         new{T}(μ, α, β)
     end
 end
