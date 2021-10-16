@@ -213,6 +213,12 @@ git-tree-sha1 = "70203f502b37d5bee40ac58a9b7896e62c076326"
 uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
 version = "0.22.2"
 
+[[JLD]]
+deps = ["FileIO", "HDF5", "Compat", "LegacyStrings", "Profile", "Random", "Printf"]
+git-tree-sha1 = "1d291ba1730de859903b480e6f85a0dc40c19dcb"
+uuid = "4138dd39-2aa7-5051-a626-17a0bb65d9c8"
+version = "0.12.3"
+
 [[LibCURL]]
 deps = ["LibCURL_jll", "MozillaCACerts_jll"]
 uuid = "b27032c2-a3e7-50c8-80cd-2d36dbcbfd21"
