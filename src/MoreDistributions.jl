@@ -1,7 +1,7 @@
 module MoreDistributions
 
 using Distributions, LinearAlgebra, LazyArrays, SpecialFunctions, StatsBase,
-      Random, NLopt
+      Random, NLopt, JLD
 
 # functions to extend
 import Base: convert, rand, maximum, minimum, extrema

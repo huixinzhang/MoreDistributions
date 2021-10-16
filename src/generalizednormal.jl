@@ -227,6 +227,7 @@ function fit_mle(::Type{<:GeneralizedNormal}, x::AbstractVector{T};
     ℒ_max, p, ret = optimize(opt, p₀)
     if ret ∉ (:SUCCESS, :XTOL_REACHED, :FTOL_REACHED)
         error("Numerical optimization failed.")
+        save("growRates_error.jld", "x", x)
     end
 
     GeneralizedNormal{T}(p...)
